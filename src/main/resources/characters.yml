@@ -1,0 +1,52 @@
+"0":
+  name-showed: "Ralsei"
+  plots:
+    1:
+      dynamic-text:
+      - "我们应该是第一次见面吧！"
+      options:
+        1:
+          text: "好像是这样的"
+          content: "PLOT:2"
+        2:
+          text: "以前见过吧"
+          content: "PLOT:3"
+    2:
+      dynamic-text:
+      - "哦哦,这样啊,你好你好"
+      options:
+        1:
+          text: "我刚来,不知道该做些什么"
+          content: "END"
+    3:
+      dynamic-text:
+      - "少羽少羽,那个那个"
+      options:
+        1:
+          text: "不是老弟你也配啊?"
+          content: "END"
+  process:
+    1:
+      dynamic-text:
+      - "看上去,你需要一些"
+      - "技术支持啊,伙计."
+      options:
+        1:
+          text: "是的,确实!"
+          content: "STAGE:2"
+        2:
+          text: "暂时不需要."
+          content: "END"
+    2:
+      dynamic-text:
+      - "那需要我做什么呢,伙计."
+      options:
+        1:
+          text: "我想学习工业"
+          content: "END"
+        2:
+          text: "我想进入冒险模式"
+          content: "COMMAND:gamemode adventure|END"
+        3:
+          text: "还是不需要了"
+          content: "END"
